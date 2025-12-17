@@ -1,0 +1,29 @@
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Global body */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 3. Global tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 4. Global behavior */
+html {
+  scroll-behavior: smooth;
+}

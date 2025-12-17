@@ -4,12 +4,31 @@ nav {
     z-index: 100;
     background-color: #0f172a;
     display: flex;
-    justify-content: space-between;
-    padding: 16px 60px;
+    justify-content: center;
+    gap: 30px;
+    padding: 16px 20px;
     align-items: center;
-    font-family: "Brush Script MT", cursive;
-    font-size: 20px;
-    border-bottom: 1px solid #150202;
-    font-family: comic sans ms;
+    font-family: 'courier new', monospace; /* Matching the project theme */
+    font-size: 18px;
+    border-bottom: 1px solid #1e293b;
+}
 
+.navbar-link {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #61dafb;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 16px 10px;
+        gap: 15px;
+        font-size: 16px;
+        flex-wrap: wrap; /* Allow wrapping if needed, or keep uniform */
+        justify-content: space-evenly;
+    }
 }

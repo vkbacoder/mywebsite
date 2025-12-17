@@ -5,9 +5,7 @@ function Navbar() {
   return (
    <nav>
     {["Home", "Skills", "Projects", "Contact"].map(item => (
-      <li key={item}>
-        <a href={`#${item.toLowerCase()}`}>{item}</a>
-      </li>
+      <a key={item} href={`#${item.toLowerCase()}`} className="navbar-link">{item}</a>
     ))}
   </nav> 
   );
